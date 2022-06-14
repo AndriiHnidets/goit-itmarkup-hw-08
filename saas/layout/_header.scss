@@ -1,3 +1,13 @@
+.menu__nav{
+    display: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
 // .header {
 //     background: #ffffff;
 //     /* padding-top: 24px;

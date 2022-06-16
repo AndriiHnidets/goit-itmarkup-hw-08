@@ -550,50 +550,71 @@ img {
   color: #000;
 }
 
-.menu__button-mobile {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
+@media screen and (max-width: 767px) {
+  .menu__nav {
+    display: none;
+  }
+  .menu__button-mobile {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .menu__button-mobile-icon {
+    fill: #212121;
+  }
+  .menu__button-mobile-icon:hover, .menu__button-mobile-icon:focus {
+    fill: #188ce8;
+  }
+  .mobile__menu-close-icon {
+    fill: #212121;
+  }
+  .mobile__menu-close-icon:hover, .mobile__menu-close-icon:focus {
+    fill: #188ce8;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear, visibility 250ms linear;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile__menu-container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
-.menu__button-mobile-icon {
-  fill: #212121;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms linear, vibility 250ms linear;
-}
-
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.mobile-menu__close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
-.mobile__menu-container {
-  position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
+@media screen and (min-width: 768px) {
+  .menu__nav {
+    display: block;
+  }
+  .menu__button-mobile {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .connection {

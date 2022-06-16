@@ -564,13 +564,13 @@ img {
     fill: #212121;
   }
   .menu__button-mobile-icon:hover, .menu__button-mobile-icon:focus {
-    fill: #188ce8;
+    fill: #2196F3;
   }
   .mobile__menu-close-icon {
     fill: #212121;
   }
   .mobile__menu-close-icon:hover, .mobile__menu-close-icon:focus {
-    fill: #188ce8;
+    fill: #2196F3;
   }
   .mobile-menu {
     position: absolute;
@@ -602,6 +602,21 @@ img {
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+  .mobile-menu__pages {
+    margin-bottom: 302px;
+    margin-top: 0px;
+  }
+  .mobile-menu__pages-link:first-child {
+    color: #2196f3;
+  }
+  .mobile-menu__pages-item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    padding-top: 0px;
   }
 }
 

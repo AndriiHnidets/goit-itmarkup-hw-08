@@ -31,7 +31,6 @@
 
 @media screen and (max-width: 767px) {
     .menu__nav {
-    
             display: none;
         }
         .menu__button-mobile {
@@ -46,7 +45,7 @@
             fill: #212121;
             &:hover,
             &:focus {
-                fill: #188ce8;
+                fill: #2196F3;
             }
         }
         .mobile__menu-close-icon {
@@ -54,7 +53,7 @@
 
             &:hover,
             &:focus {
-                fill: #188ce8;
+                fill: #2196F3;
             }
         }
     
@@ -91,6 +90,25 @@
             position: relative;
             padding-top: 48px;
             padding-bottom: 48px;
+        }
+        .mobile-menu__pages {
+            margin-bottom: 302px;
+            margin-top: 0px;
+            
+        }
+        .mobile-menu__pages-link{
+            &:first-child {
+                    color: #2196f3;
+                }
+        }
+        .mobile-menu__pages-item {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
+            letter-spacing: 0.02em;
+            color: #212121;
+            padding-top: 0px;
+            
         }
 }
 @media screen and (min-width: 768px) {

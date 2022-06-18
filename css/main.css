@@ -685,11 +685,13 @@ img {
     display: none;
   }
   .menu {
-    padding-top: 0px;
-    padding-bottom: 0px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
+  .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .logo__blue-part {
     font-family: Raleway;
@@ -699,8 +701,6 @@ img {
     line-height: 31px;
     letter-spacing: 0.03em;
     color: #2196f3;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
   .logo__black-part {
     font-family: Raleway;
@@ -710,8 +710,6 @@ img {
     line-height: 31px;
     letter-spacing: 0.03em;
     color: #000;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
   .mobile-menu {
     display: none;
@@ -723,7 +721,6 @@ img {
     padding-bottom: 32px;
     padding-left: 0px;
     margin-right: 84px;
-    margin-left: 88px;
   }
   .menu__studio {
     margin-right: 50px;
@@ -784,8 +781,7 @@ img {
     color: #2196f3;
   }
   .menu__info {
-    display: block;
-    margin-left: auto;
+    display: flex;
     padding-bottom: 21px;
     padding-top: 21px;
   }
@@ -840,9 +836,6 @@ img {
   .menu__info-tel:hover .menu__tel-icon,
   .menu__info-tel:focus .menu__tel-icon {
     fill: #2196f3;
-  }
-  .menu__info-adress {
-    display: flex;
   }
   .header {
     background: #ffffff;

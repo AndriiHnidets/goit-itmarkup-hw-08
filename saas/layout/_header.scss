@@ -94,13 +94,16 @@
         .mobile-menu__pages {
             margin-bottom: 302px;
             margin-top: 0px;
+            padding-left: 0px;
             
         }
-        .mobile-menu__pages-link{
-            &:first-child {
-                    color: #2196f3;
-                }
+        .mobile-menu__pages-link {
+            padding-bottom: 35px;
+            &:last-child{
+                padding-bottom: 0px;
+            }
         }
+        
         .mobile-menu__pages-item {
             font-weight: 500;
             font-size: 40px;
@@ -109,6 +112,64 @@
             color: #212121;
             padding-top: 0px;
             
+        }
+        .mobile-menu__pages-item-studio {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
+            letter-spacing: 0.02em;
+            color: #2196f3;
+            &:hover,
+            &:focus {
+                color: #212121;
+            }
+        }
+        .mobile-menu__info {
+            margin-bottom: 64px;
+            padding-left: 0px;
+        }
+        .mobile-menu__info-adres {
+            padding-bottom: 32px;
+        }
+        .mobile-menu__info-adres-item {
+            font-weight: 500;
+                font-size: 34px;
+                line-height: 40px;
+                letter-spacing: 0.02em;
+                color: #2196F3;
+        }
+        .mobile-menu__info-tel-item {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #757575;
+
+        }
+        .mobile-menu__social {
+            padding-left: 0px;
+            margin-bottom: 32px;
+            display: flex;
+        }
+        .mobile-menu__social-link{
+            
+        }
+        .mobile-menu__social-item{
+            margin-right: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+        .mobile-menu__social-border {
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            margin-right: 10px;
+            color: rgba(33, 33, 33, 0.2);
         }
 }
 @media screen and (min-width: 768px) {
